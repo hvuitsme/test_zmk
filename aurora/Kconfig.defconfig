@@ -6,6 +6,8 @@ if SHIELD_AURORA
 config ZMK_KEYBOARD_NAME
     default "Aurora"
 
+CONFIG_BUILD_OUTPUT_UF2=y
+
 if ZMK_DISPLAY
 
 config I2C
@@ -21,22 +23,19 @@ endif # ZMK_DISPLAY
 
 if LVGL
 
-config LVGL_VDB_SIZE
-	default 64
+config LV_Z_VDB_SIZE
+    default 64
 
-config LVGL_DPI
-	default 148
+config LV_Z_DPI
+    default 148
 
-config LVGL_BITS_PER_PIXEL
-	default 1
+config LV_Z_BITS_PER_PIXEL
+    default 1
 
-choice LVGL_COLOR_DEPTH
-	default LVGL_COLOR_DEPTH_1
+choice LV_COLOR_DEPTH
+    default LV_COLOR_DEPTH_1
 endchoice
 
 endif # LVGL
-
-endif
-
 
 endif

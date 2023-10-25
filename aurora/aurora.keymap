@@ -29,36 +29,25 @@
 
         default_layer {
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
             bindings = <
-                &mo 1           &mo 2           &kp N0
-                &kp LEFT        &kp UP          &kp RIGHT
-                &kp C_PREV      &kp DOWN        &kp C_NEXT
+                &mo 1           &kp LEFT        &kp UP            &kp DOWN        &kp RIGHT       &kp F5
+                &trans          &trans          &trans            &trans          &trans          &trans
+                &trans          &trans          &trans            &trans          &trans          &trans
                 &kp C_MUTE
             >;
         };
+        
         bt1_layer {
-
+            
             sensor-bindings = <&rgb_encoder>;
 
             bindings = <
-                &trans             &mo 2                &kp SPACE
-                &rgb_ug RGB_SAI    &rgb_ug RGB_SAD      &bt BT_SEL 0
-                &rgb_ug RGB_SPD    &rgb_ug RGB_SPI      &bt BT_SEL 1          
-                &rgb_ug RGB_TOG 
-            >;
-        };
-
-        bt2_layer {
-
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
-
-            bindings = <
-                &mo 1           &trans          &kp F5      
-                &bt BT_CLR      &trans          &rgb_ug RGB_BRI
-                &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_BRD
-                &bootloader  
+                &trans          &bootloader     &sys_reset      &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1
+                &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_BRI &rgb_ug RGB_BRD &rgb_ug RGB_SPI &rgb_ug RGB_SPD
+                &rgb_ug RGB_SAI &rgb_ug RGB_SAD &trans          &trans          &trans          &trans
+                &rgb_ug RGB_TOG
             >;
         };
     };
