@@ -28,6 +28,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            label = "DF";
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
@@ -40,6 +41,7 @@
         };
         
         bt1_layer {
+            label = "BT1";
             
             sensor-bindings = <&rgb_encoder>;
 
