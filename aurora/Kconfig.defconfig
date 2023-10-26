@@ -6,8 +6,6 @@ if SHIELD_AURORA
 config ZMK_KEYBOARD_NAME
     default "Aurora"
 
-CONFIG_BUILD_OUTPUT_UF2=y
-
 if ZMK_DISPLAY
 
 config I2C
