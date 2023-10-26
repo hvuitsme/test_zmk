@@ -3,3 +3,4 @@
 
 config SHIELD_AURORA
     def_bool $(shields_list_contains,aurora)
+    select SPI
