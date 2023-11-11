@@ -7,3 +7,5 @@ requires: [pro_micro]
 features:
   - keys
   - encoder
+  - dual shifter
+  - display
