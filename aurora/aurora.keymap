@@ -30,7 +30,7 @@
         default_layer {
             label = "DF";
 
-            sensor-bindings = <&inc_dec_kp M_VOLU M_VOLD>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
             bindings = <
                 &mo 1           &kp LEFT        &kp UP            &kp DOWN        &kp RIGHT       &kp F5
