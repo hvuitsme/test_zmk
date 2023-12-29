@@ -1,9 +1,0 @@
-# Copyright (c) 2023 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-config SHIELD_AURORA
-    def_bool $(shields_list_contains,aurora)
-    select SPI
-
-config USB_HID_POLL_INTERVAL_MS
-	default 1
